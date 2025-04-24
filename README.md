@@ -42,13 +42,18 @@ sudo apt update
 sudo apt install -y docker-ce docker-ce-cli \
   containerd.io docker-buildx-plugin docker-compose-plugin
 
+# WSLでの作業を作成
 mkdir /root/dockers
 cd /root/dockers
 
+# ここのリポジトリからソース取得
 git clone git@github.com:aynp-dev/laravel-practice.git laravel
 cd laravel
+
+# Docker起動
 docker compose up -d --build
 
+# WSLからDockerコンテナ内にコマンド
 docker exec -it -w /var/www/html/laravel laravel_app composer update
 docker exec -it -w /var/www/html/laravel laravel_app php artisan migrate
 ENTER ⏎
