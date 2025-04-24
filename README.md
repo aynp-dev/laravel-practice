@@ -53,6 +53,21 @@ cd /root/dockers
 git clone git@github.com:aynp-dev/laravel-practice.git laravel
 cd laravel
 docker compose up -d --build
+
+docker exec -it -w /var/www/html/laravel laravel_app composer update
+docker exec -it -w /var/www/html/laravel laravel_app php artisan migrate
+ENTER ⏎
+docker exec -it -w /var/www/html/laravel laravel_app chown -R www-data:www-data ../laravel/
 ```
+
+<ins>PHP MyAdmin</ins>
+http://localhost:88
+
+<ins>Laravel</ins>
+http://localhost
+
+<ins>Laravel 管理画面</ins>
+http://localhost/admin/
+
 
 
