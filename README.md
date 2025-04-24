@@ -63,18 +63,29 @@ docker exec -it -w /var/www/html/laravel laravel_app chown -R www-data:www-data 
 
 
 
-### 確認
-<ins>PHP MyAdmin</ins>
+# 確認
+### PHP MyAdmin
+
 http://localhost:88
 
-<ins>Laravel</ins>
+ユーザー名：root
+
+パスワード:root
+
+### Laravel
+
 http://localhost
 
-<ins>Laravel 管理画面</ins>
+### Laravel 管理画面
+
 http://localhost/admin/
+
+ログインユーザーは登録してください
+
 
 ### Laravel のソースコード
 <ins>VS Code</ins>
+
 ROOT / dockers / laravel
 
 
