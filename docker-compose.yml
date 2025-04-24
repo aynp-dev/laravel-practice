@@ -1,0 +1,38 @@
+services:
+    app:
+        # コンテナの名前を指定
+        container_name: laravel_app
+        build: ./docker/app
+        tty: true 
+        volumes:
+            - ./src:/var/www/html/laravel
+        # 下記はコンテナの80番ポートを開いて、ホストの8080番につなぐ
+        ports:
+             - "80:80"
+
+    # MySQLを動かすコンテナ
+    db:
+        # コンテナの名前を指定
+        container_name: laravel_db
+        build: ./docker/db
+        volumes:
+             - ./docker/db/data:/var/lib/mysql
+             - ./docker/db/my.cnf:/etc/mysql/conf.d/my.cnf
+             - ./docker/db/init:/docker-entrypoint-initdb.d
+        # コンテナ内の環境変数を指定。環境変数を渡すとビルド時に設定してくれるDockerイメージがあるので、利用の際はDocker Hubのサイトで確認すると良い
+        environment:
+            MYSQL_ROOT_PASSWORD: root
+            TZ: 'Asia/Tokyo'
+        # 起動時のコマンド
+        command: mysqld --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
+        ports:
+             - "3306:3306"
+
+    phpmyadmin:
+        container_name: laravel_pma
+        depends_on: 
+            - db
+        image: phpmyadmin/phpmyadmin
+        restart: always
+        ports:
+            - 88:80
