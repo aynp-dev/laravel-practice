@@ -18,11 +18,9 @@ wsl --install -d Ubuntu-24.04
 - WSL
 - Japanese Language Pack for Visual Studio Code
 
+<ins>VS Codeでフォルダを指定 </ins>
 
-
-<ins>フォルダを指定 </ins>
-
-「フォルダを開く」メニューから 「/root」を指定してOK  
+「フォルダを開く」メニューから 「/var/www」を指定してOK  
 ✅親フォルダー内の全てのフィアルの作成者を信頼します。  
 ⇒ はい、作成者を信頼します。  
 
@@ -49,8 +47,6 @@ sudo apt update
 sudo apt install -y docker-ce docker-ce-cli \
   containerd.io docker-buildx-plugin docker-compose-plugin
 
-# 作業用フォルダ作成
-mkdir /root/dockers
-cd /root/dockers
-
 ```
+
+
