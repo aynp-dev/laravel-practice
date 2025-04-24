@@ -49,6 +49,10 @@ sudo apt install -y docker-ce docker-ce-cli \
 
 mkdir /root/dockers
 cd /root/dockers
+
+git clone git@github.com:aynp-dev/laravel-practice.git laravel
+cd laravel
+docker compose up -d --build
 ```
 
 
