@@ -18,12 +18,6 @@ wsl --install -d Ubuntu-24.04
 - WSL
 - Japanese Language Pack for Visual Studio Code
 
-<ins>VS Codeでフォルダを指定 </ins>
-
-「フォルダを開く」メニューから 「/var/www」を指定してOK  
-✅親フォルダー内の全てのフィアルの作成者を信頼します。  
-⇒ はい、作成者を信頼します。  
-
 <ins>ターミナルを表示して次を実行</ins>
 ```
 # パッケージ更新
@@ -60,6 +54,16 @@ ENTER ⏎
 docker exec -it -w /var/www/html/laravel laravel_app chown -R www-data:www-data ../laravel/
 ```
 
+<ins>VS Codeでフォルダを指定 </ins>
+
+「フォルダを開く」メニューから 「/var/www」を指定してOK  
+✅親フォルダー内の全てのフィアルの作成者を信頼します。  
+⇒ はい、作成者を信頼します。  
+
+
+
+
+### 確認
 <ins>PHP MyAdmin</ins>
 http://localhost:88
 
@@ -68,6 +72,10 @@ http://localhost
 
 <ins>Laravel 管理画面</ins>
 http://localhost/admin/
+
+### Laravel のソースコード
+<ins>VS Code</ins>
+ROOT / dockers / laravel
 
 
 
