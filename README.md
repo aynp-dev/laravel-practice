@@ -17,6 +17,7 @@ wsl --install -d Ubuntu-24.04
 
 - WSL
 - Japanese Language Pack for Visual Studio Code
+- PHP Intelephense
 
 <ins>ターミナルを表示して次を実行</ins>
 ```
@@ -86,7 +87,7 @@ http://localhost/admin/
 ### Laravel のソースコード
 <ins>VS Code</ins>
 
-ROOT / dockers / laravel
+ROOT / dockers / src
 
 
 
