@@ -70,29 +70,26 @@ docker exec -it -w /var/www/html/laravel laravel_app chown -R www-data:www-data 
 
 
 # 確認
-### PHP MyAdmin
 
-http://localhost:88
+- Laravel
 
-ユーザー名：root
+http://localhost  
+  
+laravel degubbar 入ってます  
+ソースコードはVS Codeで　ROOT / dockers / src
 
-パスワード:root
+- Laravel 管理画面
 
-### Laravel
+http://localhost/admin/  
+ログインユーザーを登録して遊んでみる
+Laravel Backpack　入ってます。
+調べて見てCRUD生成などやってみよう
 
-http://localhost
+- PHP MyAdmin
 
-### Laravel 管理画面
-
-http://localhost/admin/
-
-ログインユーザーは登録してください
-
-
-### Laravel のソースコード
-<ins>VS Code</ins>
-
-ROOT / dockers / src
-
+http://localhost:88  
+ユーザー名：root  
+パスワード:root  
+データベースの構造を見てみよう
 
 
