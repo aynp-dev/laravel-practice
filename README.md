@@ -62,7 +62,7 @@ docker exec -it -w /var/www/html/laravel laravel_app chown -R www-data:www-data 
 
 <ins>VS Codeでフォルダを指定 </ins>
 
-「フォルダを開く」メニューから 「/var/www」を指定してOK  
+「フォルダを開く」メニューから 「/root/dockers」を指定してOK  
 ✅親フォルダー内の全てのフィアルの作成者を信頼します。  
 ⇒ はい、作成者を信頼します。  
 
