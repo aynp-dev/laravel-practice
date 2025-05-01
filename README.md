@@ -92,4 +92,10 @@ http://localhost:88
 パスワード:root  
 データベースの構造を見てみよう
 
-
+────────────────────────────────────────────────
+# 一度セットアップ完了してる場合のDocker起動
+<ins>VS Codeのターミナルから</ins>
+```
+cd /root/dockers/laravel
+docker compose up -d
+```
